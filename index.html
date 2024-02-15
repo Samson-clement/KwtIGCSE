@@ -17,20 +17,37 @@
     
     <header class="header"  style="background: #081b29;">
         <a href="#" class = "logo"> Kuwait IGCSE</a>
-
-        <nav class="navbar">
+        <nav class="navbar" id="desktop-nav">
             <a href="#" class = "active">Home</a>
             <a href="#">Past Papers</a>
             <a href="#">Notes</a>
             <a href="#">Videos</a>
             <a href="#">About</a>
         </nav>
+
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+            <div class="menu-links" style="background-color: #081b29;">
+                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">Home</a> </li>
+                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">Past Papers</a> </li>
+                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">Notes</a> </li>
+                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">Videos</a> </li>
+                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">About</a> </li>
+            </div>
+            </div>
+        </nav>
     </header>
     
     <section class="home">
         <div class="home-contents">
-            <h1>Elevate your Grades</h1>
-            <h3>Find Past Papers, Notes and Videos</h3>
+            <h1 id="elevate">Elevate your Grades</h1>
+            <h3 id="practice">Find Past Papers, Notes and Videos</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odio molestias, asperiores aspernatur quod consequuntur expedita deleniti sunt voluptatem itaque officia obcaecati repudiandae laudantium doloremque nulla! Ullam.</p>
         </div>
 
@@ -165,6 +182,6 @@
           </div>
         </footer>
       </div>
-
+    <script src="script2.js"></script>
 </body>
 </html>
