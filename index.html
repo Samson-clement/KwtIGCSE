@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="./style.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./images/fav-icon.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <header class="header"  style="background: #081b29;">
-        <a href="#" class = "logo"> Kuwait IGCSE</a>
+    <header class="header"  style="background: #f7f7f7; padding-bottom: 0px;">
+        <a href="#" class = "logo" ><img id="logo" src="./images/Kuwait IGCSE Hub.svg" alt="logo"></a>
         <nav class="navbar" id="desktop-nav">
             <a href="#" class = "active">Home</a>
             <a href="#">Past Papers</a>
@@ -33,12 +36,12 @@
                 <span></span>
                 
             </div>
-            <div class="menu-links" style="background-color: #081b29;">
-                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">Home</a> </li>
-                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">Past Papers</a> </li>
-                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">Notes</a> </li>
-                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">Videos</a> </li>
-                <li><a href="#" onclick="toggleMenu()" style="color: #00abf0;">About</a> </li>
+            <div class="menu-links" id="menu-links" style="background-color: #f7f7f7;">
+                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Home</a> </li>
+                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Past Papers</a> </li>
+                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Notes</a> </li>
+                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Videos</a> </li>
+                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">About</a> </li>
             </div>
             </div>
         </nav>
@@ -46,9 +49,9 @@
     
     <section class="home">
         <div class="home-contents">
-            <h1 id="elevate">Elevate your Grades</h1>
+            <h1 id="elevate">IGCSE Success Starts Here</h1>
             <h3 id="practice">Find Past Papers, Notes and Videos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odio molestias, asperiores aspernatur quod consequuntur expedita deleniti sunt voluptatem itaque officia obcaecati repudiandae laudantium doloremque nulla! Ullam.</p>
+            <p>Welcome to your starting line for IGCSE success at Kuwait IGCSE Hub. Discover the resources, guidance, and inspiration you need to excel in your exams and beyond. Your success journey starts now!</p>
         </div>
 
         <div class="home-sci">
@@ -56,7 +59,13 @@
             <a href="#"><i class='bx bxl-whatsapp' ></i></a>
             <a href="#"><i class='bx bx-envelope' ></i></a>
         </div>
+
+        <div class="graphics">
+            <img src="./images/1.svg" alt="studying graphic">
+        </div>
     </section>
+
+
 
     <section>
         <div class="container">
@@ -78,8 +87,8 @@
     <!---blog section-->
     <section id="blog">
         <div class="blog-heading">
-            <span>My Receent Posts</span>
-            <h3>My Blog</h3>
+            <h3>Learning Lounge</h3>
+            <span>Your go-to space for relaxed learning, where we discuss everything from overcoming exam stress to mastering time management.</span>
         </div>
 
         <div class="blog-container">
@@ -178,7 +187,7 @@
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
               <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
             </a>
-            <h6 style="color: #ededed;">© 2023 Company, Inc</h6>
+            <h6 style="color:#1d1d1f;">© 2023 Company, Inc</h6>
           </div>
         </footer>
       </div>
