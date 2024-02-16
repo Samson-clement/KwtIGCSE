@@ -375,4 +375,8 @@ ul {
     .graphics img{
         display: none;
     }
+
+    #bootstrapsec{
+        padding-left: 0px;
+    }
 }
