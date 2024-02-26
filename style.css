@@ -60,6 +60,12 @@ body{
     color: #00abf0;
 }
 
+/* .navbar a:hover{
+    color: #00abf0;
+} */
+
+
+
 .home{
     display: flex;
     height: 100vh;
@@ -177,7 +183,7 @@ ul {
 }
 
 .blog-heading span {
-    color: #f33c3c;
+    color: #272727;
 }
 
 .blog-heading h3{
@@ -326,7 +332,6 @@ ul {
 .menu-links a.active{
     color: #00abf0;
 }
-
 
 @media(max-width:1250px){
     .blog-box{
