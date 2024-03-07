@@ -18,5 +18,5 @@ document.addEventListener("DOMContentLoaded", function() {
             currentIndex = 0; // Go back to the first image if we've shown all
         }
         graphicsImg.src = images[currentIndex]; // Update the image source
-    }, 3000); // Change image every 3000 milliseconds (3 seconds)
+    }, 12000); // Change image every 3000 milliseconds (3 seconds)
 });
