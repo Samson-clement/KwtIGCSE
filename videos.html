@@ -8,22 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="./style.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./images/Untitled.svg"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    <header class="header"  style="padding-bottom: 0px;">
+    <header class="header"  style="background: #f7f7f7; padding-bottom: 0px;">
         <a href="./index.html" class = "logo" ><img id="logo" src="./images/Kuwait IGCSE Hub.svg" alt="logo"></a>
         <nav class="navbar" id="desktop-nav">
             <a href="./index.html" >Home</a>
-            <a href="./papers.html" class = "active">Past Papers</a>
-            <a href="./lounge.html">Learning Lounge</a>
-            <a href="./videos.html">Videos</a>
+            <a href="./papers.html" >Past Papers</a>
+            <a href="./lounge.html" >Learning Lounge</a>
+            <a href="./videos.html" class = "active">Videos</a>
             <a href="./about.html">About</a>
         </nav>
 
@@ -37,44 +36,28 @@
             </div>
             <div class="menu-links" id="menu-links" style="background-color: #f7f7f7;">
                 <li><a href="./index.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Home</a> </li>
-                <li><a class="active" href="./papers.html" onclick="toggleMenu()" style="color: #00abf0; cursor: pointer;">Past Papers</a> </li>
+                <li><a href="./papers.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Past Papers</a> </li>
                 <li><a href="./lounge.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Learning Lounge</a> </li>
-                <li><a href="./videos.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Videos</a> </li>
+                <li><a class="active" href="./videos.html" onclick="toggleMenu()" style="color: #00abf0; cursor: pointer;">Videos</a> </li>
                 <li><a href="./about.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">About</a> </li>
             </div>
             </div>
         </nav>
-    </header> 
-
-    <section class="home" style="padding-left: 8%;margin-left: 0px;padding-right: 39px;">
-        <div class="home-contents">
-            <h1 id="elevate">Download Papers</h1>
-            <div class="cie">
-            <h3 id="practice">Cambridge Interational Examinations:</h3>
-
-            <button onclick="location.href='./cmath.html'" type="button" class="btn btn-primary">Maths</button>
-            <button onclick="location.href='./cphysics.html'" type="button" class="btn btn-secondary">Physics</button>
-            <button onclick="location.href='./cbiology.html'" type="button" class="btn btn-success">Biology</button>
-            <button onclick="location.href='./cchemistry.html'" type="button" class="btn btn-danger">Chemistry</button>
-
-            </div>
-        
-            <!-- <div class="edexcel" style="margin-top: 50px;">
-                <h3 id="practice">Edexcel Examinations:</h3>
-
-                <button  onclick="location.href='./emath.html'" type="button" class="btn btn-primary">Maths</button>
-                <button  onclick="location.href='./ephysics.html'" type="button" class="btn btn-secondary">Physics</button>
-                <button  onclick="location.href='./ebiology.html'" type="button" class="btn btn-success">Biology</button>
-                <button  onclick="location.href='./echemistry.html'" type="button" class="btn btn-danger">Chemistry</button>
-
-            </div>  -->
+    </header>
+    
+    <!---blog section-->
+    <section id="blog" style="border-bottom: none;">
+        <div class="blog-heading">
+            <h3>Videos</h3>
+            <span style="text-align: center;">Watch Videos that will enhance your knowledge.<br/> <b>(Coming Soon)</b></span>
         </div>
     </section>
-    
+
+    <img  style="padding-bottom: 100px;width: 900px;margin-left: 290px;" src="./images/Kuwait IGCSE Hub copy.svg" alt="Stay tuned graphic" class="stay-tuned">
 
 
 
-    <div class="container" id="footer">
+    <div class="container" id="footer" style="padding-top: 100px;">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">

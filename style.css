@@ -58,6 +58,7 @@ body{
 .navbar a:hover,
 .navbar a.active{
     color: #00abf0;
+    text-decoration: underline;
 }
 
 /* .navbar a:hover{
@@ -509,7 +510,7 @@ ul {
 
 
 
-@media screen and (max-width:840px) {
+@media screen and (max-width:1145px) {
     #desktop-nav{
         display: none;
     }

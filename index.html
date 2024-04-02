@@ -23,7 +23,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body style="background: #f7f7f7; padding-bottom: 0px;">
     
     <header class="header"  style="padding-bottom: 0px;">
         <a href="./index.html" class = "logo" ><img id="logo" src="./images/Kuwait IGCSE Hub.svg" alt="logo"></a>
@@ -31,7 +31,7 @@
             <a href="./index.html" class = "active">Home</a>
             <a href="./papers.html">Past Papers</a>
             <a href="./lounge.html">Learning Lounge</a>
-            <a href="#">Videos</a>
+            <a href="./videos.html">Videos</a>
             <a href="./about.html">About</a>
         </nav>
 
@@ -44,11 +44,11 @@
                 
             </div>
             <div class="menu-links" id="menu-links" style="background-color: #f7f7f7;">
-                <li><a class="active" href="#" onclick="toggleMenu()" style="color: #00abf0; cursor: pointer;">Home</a> </li>
-                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Past Papers</a> </li>
-                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Learning Lounge</a> </li>
-                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Videos</a> </li>
-                <li><a href="#" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">About</a> </li>
+                <li><a class="active" href="./index.html" onclick="toggleMenu()" style="color: #00abf0; cursor: pointer;">Home</a> </li>
+                <li><a href="./papers.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Past Papers</a> </li>
+                <li><a href="./lounge.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Learning Lounge</a> </li>
+                <li><a href="./videos.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">Videos</a> </li>
+                <li><a href="./about.html" onclick="toggleMenu()" style="color: #1d1d1f; cursor: pointer;">About</a> </li>
             </div>
             </div>
         </nav>
@@ -82,17 +82,6 @@
     <section id="bootstrapsec">
         <div class="container w-100">
             <div class="text-secondary px-4 pt-0 pb-4 w-100 text-center" id="hero">
-                <!-- <div class="py-5">
-                  <h1 class="display-5 fw-bold text-white">Practice, Practice, Practice...</h1>
-                  <div class="col-lg-6 mx-auto">
-                    <p class="fs-5 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur excepturi quibusdam voluptate eos illo laboriosam voluptatibus doloremque animi nemo adipisci? Necessitatibus enim ducimus officiis expedita!</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                      <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Try a Past Paper</button>
-                      <button type="button" class="btn btn-outline-light btn-lg px-4">Watch a tutorial</button>
-                    </div>
-                  </div>
-                </div> -->
-
                 <div class="container-lg">
                     <div class="row">
                         <div class="col-sm-12" style="padding-right: 0px; padding-left: 0px;">			
@@ -110,49 +99,15 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="testimonial">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                                    <p>"This website is awesome for exam prep; found all the past papers I needed easily!"</p>
                                                 </div>
-                                                <div class="media">
-                                                    <img src="./images/samson.png" class="mr-3" alt="">
-                                                    <div class="media-body">
-                                                        <div class="overview">
-                                                            <div class="name"><b>Paula Wilson</b></div>
-                                                            <div class="details">Media Analyst / SkyNet</div>
-                                                            <div class="star-rating">
-                                                                <ul class="list-inline">
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>										
-                                                    </div>
-                                                </div>
+                                               
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="testimonial">
-                                                    <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                                    <p>"So easy to use and everything's in one place - made my study sessions way less stressful."</p>
                                                 </div>
-                                                <div class="media">
-                                                    <img src="./images/samson.png" class="mr-3" alt="">
-                                                    <div class="media-body">
-                                                        <div class="overview">
-                                                            <div class="name"><b>Antonio Moreno</b></div>
-                                                            <div class="details">Web Developer / SoftBee</div>
-                                                            <div class="star-rating">
-                                                                <ul class="list-inline">
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>										
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>			
                                     </div>
@@ -160,49 +115,15 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="testimonial">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                                    <p>"They keep it super updated with new stuff all the time, which is great. I use KwtIGCSE daily."</p>
                                                 </div>
-                                                <div class="media">
-                                                    <img src="./images/samson.png" class="mr-3" alt="">
-                                                    <div class="media-body">
-                                                        <div class="overview">
-                                                            <div class="name"><b>Michael Holz</b></div>
-                                                            <div class="details">Web Developer / DevCorp</div>											
-                                                            <div class="star-rating">
-                                                                <ul class="list-inline">
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>										
-                                                    </div>
-                                                </div>
+                                               
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="testimonial">
-                                                    <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                                    <p>"The layout is so student-friendly; I don't waste time looking for what I need."</p>
                                                 </div>
-                                                <div class="media">
-                                                    <img src="./images/samson.png" class="mr-3" alt="">
-                                                    <div class="media-body">
-                                                        <div class="overview">
-                                                            <div class="name"><b>Mary Saveley</b></div>
-                                                            <div class="details">Graphic Designer / MarsMedia</div>
-                                                            <div class="star-rating">
-                                                                <ul class="list-inline">
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>										
-                                                    </div>
-                                                </div>
+                                            
                                             </div>
                                         </div>			
                                     </div>
@@ -210,51 +131,15 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="testimonial">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                                    <p>"Every student should know about this site. It made a huge difference in my grades."</p>
                                                 </div>
-                                                <div class="media">
-                                                    <img src="./images/samson.png" class="mr-3" alt="">
-                                                    <div class="media-body">
-                                                        <div class="overview">
-                                                            <div class="name"><b>Martin Sommer</b></div>
-                                                            <div class="details">SEO Analyst / RealSearch</div>
-                                                            <div class="star-rating">
-                                                                <ul class="list-inline">
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>										
-                                                    </div>
-                                                </div>
+                                            
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="testimonial">
-                                                    <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                                    <p>"Extremely user-friendly and well-organized - it made finding specific subjects and years a breeze."</p>
                                                 </div>
-                                                <div class="media">
-                                                    <div class="media-left d-flex mr-3">
-                                                        <img src="./images/samson.png" alt="">										
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="overview">
-                                                            <div class="name"><b>John Williams</b></div>
-                                                            <div class="details">Web Designer / UniqueDesign</div>
-                                                            <div class="star-rating">
-                                                                <ul class="list-inline">
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>										
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>			
                                     </div>
@@ -262,10 +147,10 @@
                                 
                             </div>
                             <!-- Carousel controls -->
-                            <a class="carousel-control-prev" style="width: 30px;border-radius: 30%; top: 270px;" href="#myCarousel" data-slide="prev">
+                            <a class="carousel-control-prev" style="width: 30px;border-radius: 30%; top: 170px;" href="#myCarousel" data-slide="prev">
                                 <i class="fa fa-chevron-left"></i>
                             </a>
-                            <a class="carousel-control-next" style="width: 30px;border-radius: 30%; top: 270px;" href="#myCarousel" data-slide="next">
+                            <a class="carousel-control-next" style="width: 30px;border-radius: 30%; top: 170px;" href="#myCarousel" data-slide="next">
                                 <i class="fa fa-chevron-right"></i>
                             </a>
                         </div>
@@ -279,20 +164,21 @@
     <!---blog section-->
     <section id="blog">
         <div class="blog-heading">
-            <h3>Learning Lounge</h3>
-            <span>Your go-to space for relaxed learning, where we discuss everything from overcoming exam stress to mastering time management.</span>
+            <h3 style="font-weight: bold;">Learning Lounge</h3>
+            <span style="text-align: center;">Your go-to space for relaxed learning, where we discuss everything <br/> from overcoming exam stress to mastering time management.</span>
         </div>
+        
 
         <div class="blog-container">
             <!-- box 1-->
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="./images/blog-1.jpeg" alt="blog">
+                    <img src="./images/1.png" alt="blog">
                 </div>
 
                 <div class="blog-text">
                     <span>15 Feb 2024 / Improve Arithmetic</span>
-                    <a href="#" class="blog-title">What has happened to mental mathematics?</a>
+                    <a href="#" class="blog-title">Which websites to utilize on my PC?</a>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis repudiandae quibusdam corporis, voluptatem architecto esse illum saepe neque soluta error dolorum in fugit laudantium aspernatur illo animi, ab tenetur reprehenderit.</p>
                     <a href="#">Read More</a>
                 </div>
@@ -301,12 +187,12 @@
             <!-- box 2-->
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="./images/blog-2.jpeg" alt="blog">
+                    <img src="./images/2.png" alt="blog">
                 </div>
 
                 <div class="blog-text">
                     <span>15 Feb 2024 / Improve Arithmetic</span>
-                    <a href="#" class="blog-title">What has happened to mental mathematics?</a>
+                    <a href="#" class="blog-title">A study in Studying! What does the Science say?</a>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis repudiandae quibusdam corporis, voluptatem architecto esse illum saepe neque soluta error dolorum in fugit laudantium aspernatur illo animi, ab tenetur reprehenderit.</p>
                     <a href="#">Read More</a>
                 </div>
@@ -315,12 +201,12 @@
             <!-- box 3-->
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="./images/blog-3.jpeg" alt="blog">
+                    <img src="./images/3.png" alt="blog">
                 </div>
 
                 <div class="blog-text">
                     <span>15 Feb 2024 / Improve Arithmetic</span>
-                    <a href="#" class="blog-title">What has happened to mental mathematics?</a>
+                    <a href="#" class="blog-title">What should the modern classroom look like?</a>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis repudiandae quibusdam corporis, voluptatem architecto esse illum saepe neque soluta error dolorum in fugit laudantium aspernatur illo animi, ab tenetur reprehenderit.</p>
                     <a href="#">Read More</a>
                 </div>
@@ -329,12 +215,12 @@
             <!-- box 1-->
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="./images/blog-1.jpeg" alt="blog">
+                    <img src="./images/4.png" alt="blog">
                 </div>
 
                 <div class="blog-text">
                     <span>15 Feb 2024 / Improve Arithmetic</span>
-                    <a href="#" class="blog-title">What has happened to mental mathematics?</a>
+                    <a href="#" class="blog-title">Should you depend on Caffine while studying?</a>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis repudiandae quibusdam corporis, voluptatem architecto esse illum saepe neque soluta error dolorum in fugit laudantium aspernatur illo animi, ab tenetur reprehenderit.</p>
                     <a href="#">Read More</a>
                 </div>
@@ -343,12 +229,12 @@
             <!-- box 2-->
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="./images/blog-2.jpeg" alt="blog">
+                    <img src="./images/5.png" alt="blog">
                 </div>
 
                 <div class="blog-text">
                     <span>15 Feb 2024 / Improve Arithmetic</span>
-                    <a href="#" class="blog-title">What has happened to mental mathematics?</a>
+                    <a href="#" class="blog-title">Does listening to Music improve focus?</a>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis repudiandae quibusdam corporis, voluptatem architecto esse illum saepe neque soluta error dolorum in fugit laudantium aspernatur illo animi, ab tenetur reprehenderit.</p>
                     <a href="#">Read More</a>
                 </div>
@@ -357,12 +243,12 @@
             <!-- box 3-->
             <div class="blog-box">
                 <div class="blog-img">
-                    <img src="./images/blog-3.jpeg" alt="blog">
+                    <img src="./images/6.png" alt="blog">
                 </div>
 
                 <div class="blog-text">
                     <span>15 Feb 2024 / Improve Arithmetic</span>
-                    <a href="#" class="blog-title">What has happened to mental mathematics?</a>
+                    <a href="#" class="blog-title">Late Night v Early Bird Study Sessions!</a>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis repudiandae quibusdam corporis, voluptatem architecto esse illum saepe neque soluta error dolorum in fugit laudantium aspernatur illo animi, ab tenetur reprehenderit.</p>
                     <a href="#">Read More</a>
                 </div>
