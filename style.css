@@ -45,6 +45,9 @@ body{
     max-width: 170px;
 }
 
+.blog-img:hover{
+    cursor: pointer;
+}
 
 .navbar a {
     font-size: 24px;
@@ -261,13 +264,15 @@ ul {
     transition: all ease 0.3s;
 }
 
-/* hamburger menu*/
+/* hamburger menu
 #hamburger-nav{
     display: none;
 }
 .hamburger-menu {
     position: relative;
     display: inline-block;
+    width: 20px;
+    padding: 15px;
 }
 .hamburger-icon{
     display: flex;
@@ -292,19 +297,24 @@ ul {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    border-radius: 10%;
+    
 }
 .menu-links{
     display: block;
-    padding: 1px;
+    padding: 8px;
     text-align: center;
     font-size:1rem ;
     background-size: 1rem;
     color: #f7f7f7;
     text-decoration: none;
     transition:all 0.3 ease-in-out ;
+    border-radius: 10%;
+    
 }
 .menu-links li{
     list-style: none;
+    padding: 2px;
 }
 
 .menu-links.open{
@@ -332,28 +342,99 @@ ul {
 .menu-links a:hover,
 .menu-links a.active{
     color: #00abf0;
+} */
+
+/* Hamburger Menu */
+#hamburger-nav {
+    display: none;  /* Ensures that the nav is not visible on desktop initially */
+}
+
+.hamburger-menu {
+    position: absolute; /* Ensures the menu icon stays in a fixed position */
+    top: 1; /* Aligns the menu at the top of the viewport */
+    left: 0; /* Aligns the menu to the left of the viewport */
+    width: 100%; /* Full width */
+    padding: 15px; /* Provides padding around the menu icon */
+    z-index: -100; /* Keeps the menu above other content */
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 23px; /* Height of the hamburger icon */
+    width: 24px; /* Width of the hamburger icon */
+    cursor: pointer;
+    margin-left: auto; /* Aligns the hamburger to the right */
+    margin-right: 20px; /* Margin from the right edge */
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 2px;
+    background-color: #1d1d1f;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 56px; /* Adjust based on the height of the hamburger menu */
+    left: 0;
+    width: 100%; /* Menu width is 100% of the viewport */
+    background-color: rgba(255, 255, 255, 0.9); /* Lighter background for links to enhance readability */
+    border-top: 1px solid #ccc; /* Adds a subtle top border */
+ /* Shadow for dropdown */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0; /* Initial state is collapsed */
+    padding: 0;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links li a {
+    display: block;
+    padding: 12px 20px; /* More padding for touch targets */
+    text-align: left; /* Aligns text to the left */
+    font-size: 16px; /* Larger font size for readability */
+    color: #1d1d1f;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-links.open {
+    max-height: 300px; /* Adjust based on the number of items */
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu-links a:hover,
+.menu-links a.active {
+    background-color: rgba(17, 42, 51, 0.05); /* Semi-transparent blue */
+    color: white; /* White text color on active/hover */
 }
 
 
-/* h6 {
-	color: #000;
-	font-size: 26px;
-	font-weight: 300;
-	position: relative;
-	margin: 0 0 50px 0;
-	text-transform: uppercase;
-	display: inline-block;
-} */
-/* h6::after {
-	content: "";
-	width: 50%;
-	position: absolute;
-	height: 4px;
-	border-radius: 1px;
-	background: #ff5555;
-	left: 0;
-	bottom: -20px;
-} */
+@media (max-width: 768px) {
+    #hamburger-nav {
+        display: block; /* Only display the nav in mobile view */
+    }
+}
+
+
+
 .carousel {
 	margin: 50px auto;
 }
@@ -479,6 +560,7 @@ ul {
 	color: #ffdc12;
 }
 
+
 @media(max-width:1250px){
     .blog-box{
         width: 300px;
@@ -530,4 +612,14 @@ ul {
     #bootstrapsec{
         padding-left: 0px;
     }
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev{
+        display: none;
+    }
+    .carousel-control-next{
+        display: none;
+    }
+
 }
