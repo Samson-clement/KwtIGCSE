@@ -18,7 +18,29 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     
+    <style>
+      #drawer{
+        width: 1000px;
+      }
+
+      h1{
+        padding-bottom: 30px;
+      }
+      @media (max-width: 768px) {
+        
+        #drawer{
+          width: 100%;
+        }
+        #subject{
+          font-size: 45px;
+        }
+
+        }
+    </style>
+
 </head>
+
+
 <body style="background: #f7f7f7; padding-bottom: 0px;">
     <header class="header"  style="background: #f7f7f7; padding-bottom: 0px;">
         <a href="./index.html" class = "logo" ><img id="logo" src="./images/Kuwait IGCSE Hub.svg" alt="logo"></a>
@@ -51,10 +73,10 @@
 
     <section class="home" style="padding-left: 8%;margin-left: 0px;padding-right: 39px;">
         <div class="home-contents">
-            <h1 style="padding-bottom: 30px;">CIE Mathematics</h1>
+            <h1 id="subject" >CIE Mathematics</h1>
 
             <div class="panel-group" id="accordion">
-                <div class="panel panel-default" style="width: 1000px;">
+                <div id="drawer" class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
@@ -196,7 +218,7 @@
             </div>
 
             <div class="panel-group" id="accordion2">
-                <div class="panel panel-default" style="width: 1000px;">
+                <div id="drawer" class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
@@ -339,7 +361,7 @@
             </div>
 
             <div class="panel-group" id="accordion3">
-                <div class="panel panel-default" style="width: 1000px;">
+                <div id="drawer" class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
@@ -481,7 +503,7 @@
             </div>
 
             <div class="panel-group" id="accordion4">
-                <div class="panel panel-default" style="width: 1000px;">
+                <div id="drawer" class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
